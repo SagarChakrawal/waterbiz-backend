@@ -12,8 +12,7 @@ import com.kashiquench.waterbiz_backend.entity.FeedbackRequest;
 
 @RestController
 @RequestMapping("/api")
-//@CrossOrigin(origins = "http://localhost:4200") // allow Angular frontend
-@CrossOrigin(origins = "https://kashiquench.netlify.app/") // allow Angular frontend
+@CrossOrigin(origins = {"http://localhost:4200", "https://kashiquench.netlify.app/"}) // allow Angular frontend
 public class FeedbackController {
 
     @Autowired
